@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header {
+  border-bottom: 10px solid #6D50B8; /* Color del borde para pantallas grandes */
+}
+
+@media (max-width: 1024px) {
+  header {
+    border-bottom: 10px solid #C2E462; /* Color del borde para pantallas móviles */
+  }
+}
+
+#mainback {
+  border-bottom: 10px solid #6D50B8; /* Color del borde para pantallas grandes */
+}
+
+@media (max-width: 1024px) {
+  #mainback {
+    border-bottom: 10px solid #C2E462; /* Color del borde para pantallas móviles */
+  }
+}
+
+
+@layer utilities {
+
+.text-200{
+  font-size: 100px;
+  line-height: 80px;
+}
+
+.qrcode{
+  width: 344px;
+  height: 344px;
+  border-radius: 32px;
+}
+  .bg-primary {
+    background-color: #6D50B8; /* Color primario */
+}
+
+.text-primary {
+    color: #6D50B8; /* Color de texto primario */
+}
+
+.bg-secondary {
+    background-color: #E64871; /* Color secundario */
+}
+
+.text-secondary {
+    color: #E64871; /* Color de texto secundario */
+}
+
+.bg-accent {
+    background-color: #C2E462; /* Color de acento */
+}
+
+.text-accent {
+    color: #C2E462; /* Color de texto de acento */
+}
+
+.bg-accentHover {
+    background-color: #A3C56C; /* Color de fondo en hover para acento */
+}
+
+.bg-accent:hover {
+  background-color: #A3C56C; /* Color de hover */
+}
+
+.border-softpink {
+    border-color: #F9D2DF; /* Color de borde suave rosa */
+    border-bottom:solid inset;
+    border-width: 5px;
+}
+
+/* Tipografías personalizadas */
+.font-helveticaNeue {
+    font-family: 'Helvetica Neue', sans-serif; /* Helvetica Neue */
+}
+
+.font-bebasNeue {
+    font-family: 'Bebas Neue', sans-serif; /* Bebas Neue */
+}
+
+  .bg-ver {
+    background-image: url('/images/bg-ver.png'); /* Ruta de la imagen de fondo */
+    /* Asegúrate de que esta ruta sea correcta */
+  }
+
+  
+}

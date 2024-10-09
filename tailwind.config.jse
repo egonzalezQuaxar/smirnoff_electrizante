@@ -1,0 +1,21 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./index.html",
+    "./main.js",
+    "./customcode.js",
+    "./public/**/*.html",
+    "./**/*.html",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: '#6D50B8',
+        secondary: '#E64871',
+      },
+    },
+  },
+  plugins: [],
+};
+
+
